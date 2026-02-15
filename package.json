@@ -1,12 +1,24 @@
 {
-  "name": "rabbithole",
+  "name": "rabbithole-cli",
   "version": "1.0.0",
   "description": "How deep does your dependency tree go? — Dependency health check CLI for vulnerabilities, outdated, deprecated, and stale packages.",
   "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "bin": {
     "rabbithole": "dist/index.js"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
@@ -18,17 +30,34 @@
     "lint:fix": "eslint src/ --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run lint && npm run format:check && npm run build && npm run test"
+    "check": "npm run lint && npm run format:check && npm run build && npm run test",
+    "prepublishOnly": "npm run check"
   },
   "keywords": [
     "dependencies",
     "audit",
     "outdated",
     "deprecated",
+    "stale",
     "health",
-    "cli"
+    "cli",
+    "security",
+    "vulnerabilities",
+    "npm"
   ],
+  "author": "Miguel Medeiros",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelMedeiros/rabbithole.git"
+  },
+  "homepage": "https://github.com/MiguelMedeiros/rabbithole#readme",
+  "bugs": {
+    "url": "https://github.com/MiguelMedeiros/rabbithole/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@types/node": "^22.0.0",
