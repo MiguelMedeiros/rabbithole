@@ -1,6 +1,6 @@
 {
   "name": "rabbithole-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "How deep does your dependency tree go? — Dependency health check CLI for vulnerabilities, outdated, deprecated, and stale packages.",
   "type": "module",
   "main": "dist/index.js",
