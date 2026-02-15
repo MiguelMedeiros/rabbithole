@@ -1,0 +1,50 @@
+{
+  "name": "rabbithole",
+  "version": "1.0.0",
+  "description": "How deep does your dependency tree go? — Dependency health check CLI for vulnerabilities, outdated, deprecated, and stale packages.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "rabbithole": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run format:check && npm run build && npm run test"
+  },
+  "keywords": [
+    "dependencies",
+    "audit",
+    "outdated",
+    "deprecated",
+    "health",
+    "cli"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.8.1",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.55.0",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.0.0",
+    "chalk": "^5.4.0",
+    "cli-table3": "^0.6.5",
+    "commander": "^13.0.0",
+    "ora": "^8.2.0"
+  }
+}
