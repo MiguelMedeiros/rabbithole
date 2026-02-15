@@ -4,6 +4,14 @@
   <img src="https://preview.redd.it/is-there-a-high-quality-image-of-the-white-rabbit-tattoo-v0-upaelxivgzye1.jpeg?width=1024&format=pjpg&auto=webp&s=31da5b1ef9ac8674c85b26e4d295aea50c667502" alt="Follow the White Rabbit" width="100%" />
 </p>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/rabbithole-cli"><img src="https://img.shields.io/npm/v/rabbithole-cli.svg" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/rabbithole-cli"><img src="https://img.shields.io/npm/dm/rabbithole-cli.svg" alt="npm downloads" /></a>
+  <a href="https://github.com/MiguelMedeiros/rabbithole/actions/workflows/ci.yml"><img src="https://github.com/MiguelMedeiros/rabbithole/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://github.com/MiguelMedeiros/rabbithole/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/rabbithole-cli.svg" alt="license" /></a>
+  <a href="https://github.com/MiguelMedeiros/rabbithole"><img src="https://img.shields.io/github/stars/MiguelMedeiros/rabbithole.svg?style=social" alt="GitHub stars" /></a>
+</p>
+
 ```
 Wake up, Developer...
 The Matrix has you...
@@ -25,13 +33,13 @@ Follow the white rabbit.
 ## Install
 
 ```bash
-npm install -g rabbithole
+npm install -g rabbithole-cli
 ```
 
 Or clone the source and unplug from the Matrix yourself:
 
 ```bash
-git clone <repo>
+git clone https://github.com/MiguelMedeiros/rabbithole.git
 cd rabbithole
 npm install
 npm run build
